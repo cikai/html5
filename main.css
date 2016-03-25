@@ -1,0 +1,80 @@
+@font-face {
+	font-family: codeFont;
+	src: url('Menlo-Regular.ttf');
+}
+
+* {
+	box-sizing: border-box;
+	font-family: codeFont;
+}
+
+.header {
+	position:absolute;
+	left: 0px;
+	top:0px;
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+.menu {
+	position:absolute;
+	left: 0px;
+	top:100px;
+	bottom: 50px;
+	width: 200px;;
+	overflow: hidden;
+	border-right: 1px solid black;
+}
+
+.main {
+	position:absolute;
+	top: 100px;
+	left: 250px;
+	right: 0px;
+	bottom: 50px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.footer {
+	color: #7f8c8d;
+	text-align: center;
+	border-top: 1px solid #999D9E;
+	position: fixed;
+	left: 0;
+	bottom: 0px;
+	right: 0;
+	height: 50px;
+}
+
+.title {
+	width: auto;
+    margin: 0 150px 0 100px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	background: #EDEDED;
+	font-family: codeFont;
+}
+
+.content {
+	width: 100%;
+	padding-top: 10px;
+	padding-right: 50px;
+	text-indent: 1em;
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+
+	-moz-column-gap:40px; /* Firefox */
+	-webkit-column-gap:40px; /* Safari and Chrome */
+	column-gap:40px;
+
+	-moz-column-rule:4px outset #AAAAAA; /* Firefox */
+	-webkit-column-rule:4px outset #AAAAAA; /* Safari and Chrome */
+	column-rule:4px outset #AAAAAA;
+}
